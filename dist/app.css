@@ -181,8 +181,21 @@ body {
           animation: pulsation-more 2s linear 1.5s infinite;
   border: 1px solid var(--clr-blue);
 }
-.home .planets__line-about {
+.home .planets__about:hover > .planets__line-about {
   opacity: 1;
+}
+.home .planets__project:hover > .planets__line-project {
+  opacity: 1;
+}
+.home .planets__contact:hover > .planets__line-contact {
+  opacity: 1;
+}
+.home .planets__more:hover > .planets__line-more {
+  opacity: 1;
+}
+.home .planets__line-about, .home .planets__line-project, .home .planets__line-contact, .home .planets__line-more {
+  opacity: 0;
+  transition: all 2s;
 }
 .home .planets__line-about-1 {
   background-color: var(--clr-red);

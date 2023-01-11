@@ -195,8 +195,36 @@
       }
     }
 
-    &__line-about {
-      opacity: 1;
+    &__about:hover {
+      & > .planets__line-about {
+        opacity: 1;
+      }
+    }
+
+    &__project:hover {
+      & > .planets__line-project {
+        opacity: 1;
+      }
+    }
+
+    &__contact:hover {
+      & > .planets__line-contact {
+        opacity: 1;
+      }
+    }
+
+    &__more:hover {
+      & > .planets__line-more {
+        opacity: 1;
+      }
+    }
+
+    &__line-about,
+    &__line-project,
+    &__line-contact,
+    &__line-more {
+      opacity: 0;
+      transition: all 2s;
     }
 
     &__line-about-1 {
