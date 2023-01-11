@@ -109,7 +109,7 @@
   .planets {
     width: 366px;
     height: 366px;
-    position: absolute;
+    position: relative;
 
     &__about,
     &__project,
@@ -194,49 +194,40 @@
         border: 1px solid var(--clr-blue);
       }
     }
-  }
 
-  .lines {
-    width: 366px;
-    height: 366px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-
-    &__about {
+    &__line-about {
       opacity: 1;
     }
 
-    &__about-1 {
+    &__line-about-1 {
       background-color: var(--clr-red);
       width: 2rem;
       height: 0.2rem;
       position: absolute;
-      left: -8.5%;
-      top: 28%;
+      left: -82%;
+      top: 50%;
     }
 
-    &__about-2 {
+    &__line-about-2 {
       background-color: var(--clr-red);
       width: 4rem;
       height: 0.2rem;
       position: absolute;
-      left: -21.5%;
-      top: 20.6%;
+      left: -198%;
+      top: -16%;
       transform: rotate(60deg);
     }
 
-    &__about-3 {
+    &__line-about-3 {
       background-color: var(--clr-red);
       width: 3rem;
       height: 0.2rem;
       position: absolute;
-      left: -30%;
-      top: 13%;
+      left: -250%;
+      top: -90%;
     }
 
-    &__project-1 {
+    &__line-project-1 {
       background-color: var(--clr-orange);
       width: 2rem;
       height: 0.2rem;
@@ -245,7 +236,7 @@
       top: 82.5%;
     }
 
-    &__project-2 {
+    &__line-project-2 {
       background-color: var(--clr-orange);
       width: 4rem;
       height: 0.2rem;
@@ -255,7 +246,7 @@
       transform: rotate(60deg);
     }
 
-    &__project-3 {
+    &__line-project-3 {
       background-color: var(--clr-orange);
       width: 3rem;
       height: 0.2rem;
@@ -264,7 +255,7 @@
       top: 97.7%;
     }
 
-    &__contact-1 {
+    &__line-contact-1 {
       background-color: var(--clr-purple);
       width: 2rem;
       height: 0.2rem;
@@ -273,7 +264,7 @@
       top: 43%;
     }
 
-    &__contact-2 {
+    &__line-contact-2 {
       background-color: var(--clr-purple);
       width: 4rem;
       height: 0.2rem;
@@ -283,7 +274,7 @@
       transform: rotate(-60deg);
     }
 
-    &__contact-3 {
+    &__line-contact-3 {
       background-color: var(--clr-purple);
       width: 3rem;
       height: 0.2rem;
@@ -292,7 +283,7 @@
       top: 28%;
     }
 
-    &__more-1 {
+    &__line-more-1 {
       background-color: var(--clr-blue);
       width: 2rem;
       height: 0.2rem;
@@ -301,7 +292,7 @@
       top: 61.5%;
     }
 
-    &__more-2 {
+    &__line-more-2 {
       background-color: var(--clr-blue);
       width: 4rem;
       height: 0.2rem;
@@ -311,7 +302,7 @@
       transform: rotate(-60deg);
     }
 
-    &__more-3 {
+    &__line-more-3 {
       background-color: var(--clr-blue);
       width: 3rem;
       height: 0.2rem;
@@ -319,5 +310,9 @@
       left: -1.5%;
       top: 76.2%;
     }
+  }
+
+  .planets_about:hover > .planets__line-about {
+    opacity: 1;
   }
 }

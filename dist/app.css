@@ -107,7 +107,7 @@ body {
 .home .planets {
   width: 366px;
   height: 366px;
-  position: absolute;
+  position: relative;
 }
 .home .planets__about, .home .planets__project, .home .planets__contact, .home .planets__more {
   background-color: var(--clr-red);
@@ -181,43 +181,35 @@ body {
           animation: pulsation-more 2s linear 1.5s infinite;
   border: 1px solid var(--clr-blue);
 }
-.home .lines {
-  width: 366px;
-  height: 366px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-}
-.home .lines__about {
+.home .planets__line-about {
   opacity: 1;
 }
-.home .lines__about-1 {
+.home .planets__line-about-1 {
   background-color: var(--clr-red);
   width: 2rem;
   height: 0.2rem;
   position: absolute;
-  left: -8.5%;
-  top: 28%;
+  left: -82%;
+  top: 50%;
 }
-.home .lines__about-2 {
+.home .planets__line-about-2 {
   background-color: var(--clr-red);
   width: 4rem;
   height: 0.2rem;
   position: absolute;
-  left: -21.5%;
-  top: 20.6%;
+  left: -198%;
+  top: -16%;
   transform: rotate(60deg);
 }
-.home .lines__about-3 {
+.home .planets__line-about-3 {
   background-color: var(--clr-red);
   width: 3rem;
   height: 0.2rem;
   position: absolute;
-  left: -30%;
-  top: 13%;
+  left: -250%;
+  top: -90%;
 }
-.home .lines__project-1 {
+.home .planets__line-project-1 {
   background-color: var(--clr-orange);
   width: 2rem;
   height: 0.2rem;
@@ -225,7 +217,7 @@ body {
   left: 72%;
   top: 82.5%;
 }
-.home .lines__project-2 {
+.home .planets__line-project-2 {
   background-color: var(--clr-orange);
   width: 4rem;
   height: 0.2rem;
@@ -234,7 +226,7 @@ body {
   top: 90%;
   transform: rotate(60deg);
 }
-.home .lines__project-3 {
+.home .planets__line-project-3 {
   background-color: var(--clr-orange);
   width: 3rem;
   height: 0.2rem;
@@ -242,7 +234,7 @@ body {
   left: 89.2%;
   top: 97.7%;
 }
-.home .lines__contact-1 {
+.home .planets__line-contact-1 {
   background-color: var(--clr-purple);
   width: 2rem;
   height: 0.2rem;
@@ -250,7 +242,7 @@ body {
   left: 83%;
   top: 43%;
 }
-.home .lines__contact-2 {
+.home .planets__line-contact-2 {
   background-color: var(--clr-purple);
   width: 4rem;
   height: 0.2rem;
@@ -259,7 +251,7 @@ body {
   top: 35.6%;
   transform: rotate(-60deg);
 }
-.home .lines__contact-3 {
+.home .planets__line-contact-3 {
   background-color: var(--clr-purple);
   width: 3rem;
   height: 0.2rem;
@@ -267,7 +259,7 @@ body {
   left: 100%;
   top: 28%;
 }
-.home .lines__more-1 {
+.home .planets__line-more-1 {
   background-color: var(--clr-blue);
   width: 2rem;
   height: 0.2rem;
@@ -275,7 +267,7 @@ body {
   left: 20%;
   top: 61.5%;
 }
-.home .lines__more-2 {
+.home .planets__line-more-2 {
   background-color: var(--clr-blue);
   width: 4rem;
   height: 0.2rem;
@@ -284,13 +276,16 @@ body {
   top: 69%;
   transform: rotate(-60deg);
 }
-.home .lines__more-3 {
+.home .planets__line-more-3 {
   background-color: var(--clr-blue);
   width: 3rem;
   height: 0.2rem;
   position: absolute;
   left: -1.5%;
   top: 76.2%;
+}
+.home .planets_about:hover > .planets__line-about {
+  opacity: 1;
 }
 
 @-webkit-keyframes rotate {
