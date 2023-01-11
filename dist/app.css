@@ -121,6 +121,7 @@ body {
   position: absolute;
   top: 23%;
   left: -1%;
+  z-index: 80;
 }
 .home .planets__about::before, .home .planets__project::before, .home .planets__contact::before, .home .planets__more::before {
   content: "";
@@ -179,6 +180,117 @@ body {
   -webkit-animation: pulsation-more 2s linear 1.5s infinite;
           animation: pulsation-more 2s linear 1.5s infinite;
   border: 1px solid var(--clr-blue);
+}
+.home .lines {
+  width: 366px;
+  height: 366px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.home .lines__about {
+  opacity: 1;
+}
+.home .lines__about-1 {
+  background-color: var(--clr-red);
+  width: 2rem;
+  height: 0.2rem;
+  position: absolute;
+  left: -8.5%;
+  top: 28%;
+}
+.home .lines__about-2 {
+  background-color: var(--clr-red);
+  width: 4rem;
+  height: 0.2rem;
+  position: absolute;
+  left: -21.5%;
+  top: 20.6%;
+  transform: rotate(60deg);
+}
+.home .lines__about-3 {
+  background-color: var(--clr-red);
+  width: 3rem;
+  height: 0.2rem;
+  position: absolute;
+  left: -30%;
+  top: 13%;
+}
+.home .lines__project-1 {
+  background-color: var(--clr-orange);
+  width: 2rem;
+  height: 0.2rem;
+  position: absolute;
+  left: 72%;
+  top: 82.5%;
+}
+.home .lines__project-2 {
+  background-color: var(--clr-orange);
+  width: 4rem;
+  height: 0.2rem;
+  position: absolute;
+  left: 76.3%;
+  top: 90%;
+  transform: rotate(60deg);
+}
+.home .lines__project-3 {
+  background-color: var(--clr-orange);
+  width: 3rem;
+  height: 0.2rem;
+  position: absolute;
+  left: 89.2%;
+  top: 97.7%;
+}
+.home .lines__contact-1 {
+  background-color: var(--clr-purple);
+  width: 2rem;
+  height: 0.2rem;
+  position: absolute;
+  left: 83%;
+  top: 43%;
+}
+.home .lines__contact-2 {
+  background-color: var(--clr-purple);
+  width: 4rem;
+  height: 0.2rem;
+  position: absolute;
+  left: 87.2%;
+  top: 35.6%;
+  transform: rotate(-60deg);
+}
+.home .lines__contact-3 {
+  background-color: var(--clr-purple);
+  width: 3rem;
+  height: 0.2rem;
+  position: absolute;
+  left: 100%;
+  top: 28%;
+}
+.home .lines__more-1 {
+  background-color: var(--clr-blue);
+  width: 2rem;
+  height: 0.2rem;
+  position: absolute;
+  left: 20%;
+  top: 61.5%;
+}
+.home .lines__more-2 {
+  background-color: var(--clr-blue);
+  width: 4rem;
+  height: 0.2rem;
+  position: absolute;
+  left: 7%;
+  top: 69%;
+  transform: rotate(-60deg);
+}
+.home .lines__more-3 {
+  background-color: var(--clr-blue);
+  width: 3rem;
+  height: 0.2rem;
+  position: absolute;
+  left: -1.5%;
+  top: 76.2%;
 }
 
 @-webkit-keyframes rotate {

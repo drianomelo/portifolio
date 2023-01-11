@@ -128,6 +128,7 @@
       position: absolute;
       top: 23%;
       left: -1%;
+      z-index: 80;
 
       &::before {
         content: "";
@@ -172,7 +173,7 @@
 
       &::before {
         content: "";
-        animation: pulsation-contact 2s linear .5s infinite;
+        animation: pulsation-contact 2s linear 0.5s infinite;
         border: 1px solid var(--clr-purple);
       }
     }
@@ -194,6 +195,129 @@
       }
     }
   }
+
+  .lines {
+    width: 366px;
+    height: 366px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    &__about {
+      opacity: 1;
+    }
+
+    &__about-1 {
+      background-color: var(--clr-red);
+      width: 2rem;
+      height: 0.2rem;
+      position: absolute;
+      left: -8.5%;
+      top: 28%;
+    }
+
+    &__about-2 {
+      background-color: var(--clr-red);
+      width: 4rem;
+      height: 0.2rem;
+      position: absolute;
+      left: -21.5%;
+      top: 20.6%;
+      transform: rotate(60deg);
+    }
+
+    &__about-3 {
+      background-color: var(--clr-red);
+      width: 3rem;
+      height: 0.2rem;
+      position: absolute;
+      left: -30%;
+      top: 13%;
+    }
+
+    &__project-1 {
+      background-color: var(--clr-orange);
+      width: 2rem;
+      height: 0.2rem;
+      position: absolute;
+      left: 72%;
+      top: 82.5%;
+    }
+
+    &__project-2 {
+      background-color: var(--clr-orange);
+      width: 4rem;
+      height: 0.2rem;
+      position: absolute;
+      left: 76.3%;
+      top: 90%;
+      transform: rotate(60deg);
+    }
+
+    &__project-3 {
+      background-color: var(--clr-orange);
+      width: 3rem;
+      height: 0.2rem;
+      position: absolute;
+      left: 89.2%;
+      top: 97.7%;
+    }
+
+    &__contact-1 {
+      background-color: var(--clr-purple);
+      width: 2rem;
+      height: 0.2rem;
+      position: absolute;
+      left: 83%;
+      top: 43%;
+    }
+
+    &__contact-2 {
+      background-color: var(--clr-purple);
+      width: 4rem;
+      height: 0.2rem;
+      position: absolute;
+      left: 87.2%;
+      top: 35.6%;
+      transform: rotate(-60deg);
+    }
+
+    &__contact-3 {
+      background-color: var(--clr-purple);
+      width: 3rem;
+      height: 0.2rem;
+      position: absolute;
+      left: 100%;
+      top: 28%;
+    }
+
+    &__more-1 {
+      background-color: var(--clr-blue);
+      width: 2rem;
+      height: 0.2rem;
+      position: absolute;
+      left: 20%;
+      top: 61.5%;
+    }
+
+    &__more-2 {
+      background-color: var(--clr-blue);
+      width: 4rem;
+      height: 0.2rem;
+      position: absolute;
+      left: 7%;
+      top: 69%;
+      transform: rotate(-60deg);
+    }
+
+    &__more-3 {
+      background-color: var(--clr-blue);
+      width: 3rem;
+      height: 0.2rem;
+      position: absolute;
+      left: -1.5%;
+      top: 76.2%;
+    }
+  }
 }
-
-
