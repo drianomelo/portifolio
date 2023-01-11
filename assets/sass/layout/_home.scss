@@ -1,0 +1,118 @@
+.home {
+  background-image: radial-gradient(
+    ellipse closest-side at 50% 50%,
+    #1a2633 20%,
+    #111a22 70%,
+    #101820
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+
+  .circles {
+    width: 366px;
+    height: 366px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__logo {
+      position: relative;
+      z-index: 100;
+      & img {
+        width: 3.5rem;
+      }
+    }
+
+    &__circle-1,
+    &__circle-2 {
+      position: absolute;
+      top: 24.5%;
+      left: 24.5%;
+
+      & img {
+        width: 68%;
+        height: 68%;
+      }
+    }
+
+    &__circle-3,
+    &__circle-4 {
+      position: absolute;
+      top: 18.5%;
+      left: 18.5%;
+
+      & img {
+        width: 78%;
+        height: 78%;
+      }
+    }
+
+    &__circle-5,
+    &__circle-6 {
+      position: absolute;
+      top: 11.5%;
+      left: 11.5%;
+
+      & img {
+        width: 88%;
+        height: 88%;
+      }
+    }
+
+    &__circle-7,
+    &__circle-8 {
+      position: absolute;
+      top: 8%;
+      left: 8%;
+
+      & img {
+        width: 92%;
+        height: 92%;
+      }
+    }
+
+    &__circle-9,
+    &__circle-10 {
+      position: absolute;
+      top: 0%;
+      left: 0%;
+
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__circle-1 img,
+    &__circle-3 img,
+    &__circle-5 img,
+    &__circle-7 img,
+    &__circle-9 img {
+      animation: rotate 60s linear infinite;
+    }
+
+    &__circle-2 img,
+    &__circle-4 img,
+    &__circle-6 img,
+    &__circle-8 img,
+    &__circle-10 img {
+      animation: rotate 60s linear infinite reverse;
+    }
+  }
+
+  &__about {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}

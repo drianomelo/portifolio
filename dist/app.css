@@ -22,4 +22,96 @@ body {
   --clr-black: #101820;
   --clr-white: #f4f4f4;
   --ff-roboto: "Roboto", sans-serif;
+}
+
+.home {
+  background-image: radial-gradient(ellipse closest-side at 50% 50%, #1a2633 20%, #111a22 70%, #101820);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+.home .circles {
+  width: 366px;
+  height: 366px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .circles__logo {
+  position: relative;
+  z-index: 100;
+}
+.home .circles__logo img {
+  width: 3.5rem;
+}
+.home .circles__circle-1, .home .circles__circle-2 {
+  position: absolute;
+  top: 24.5%;
+  left: 24.5%;
+}
+.home .circles__circle-1 img, .home .circles__circle-2 img {
+  width: 68%;
+  height: 68%;
+}
+.home .circles__circle-3, .home .circles__circle-4 {
+  position: absolute;
+  top: 18.5%;
+  left: 18.5%;
+}
+.home .circles__circle-3 img, .home .circles__circle-4 img {
+  width: 78%;
+  height: 78%;
+}
+.home .circles__circle-5, .home .circles__circle-6 {
+  position: absolute;
+  top: 11.5%;
+  left: 11.5%;
+}
+.home .circles__circle-5 img, .home .circles__circle-6 img {
+  width: 88%;
+  height: 88%;
+}
+.home .circles__circle-7, .home .circles__circle-8 {
+  position: absolute;
+  top: 8%;
+  left: 8%;
+}
+.home .circles__circle-7 img, .home .circles__circle-8 img {
+  width: 92%;
+  height: 92%;
+}
+.home .circles__circle-9, .home .circles__circle-10 {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+.home .circles__circle-9 img, .home .circles__circle-10 img {
+  width: 100%;
+  height: 100%;
+}
+.home .circles__circle-1 img, .home .circles__circle-3 img, .home .circles__circle-5 img, .home .circles__circle-7 img, .home .circles__circle-9 img {
+  -webkit-animation: rotate 60s linear infinite;
+          animation: rotate 60s linear infinite;
+}
+.home .circles__circle-2 img, .home .circles__circle-4 img, .home .circles__circle-6 img, .home .circles__circle-8 img, .home .circles__circle-10 img {
+  animation: rotate 60s linear infinite reverse;
+}
+.home__about {
+  width: 2rem;
+  height: 2rem;
+}
+
+@-webkit-keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=app.css.map */

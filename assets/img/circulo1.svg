@@ -1,26 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Creator: CorelDRAW -->
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="207.987mm" height="207.987mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-viewBox="0 0 97177.41 97177.45"
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="207.273mm" height="207.273mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 8697.96 8697.87"
  xmlns:xlink="http://www.w3.org/1999/xlink"
  xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
  <defs>
   <style type="text/css">
    <![CDATA[
-    .str0 {stroke:#F08C24;stroke-width:667.86;stroke-miterlimit:22.9256;stroke-dasharray:144903.164084 144903.164084 289806.328167 1159260.915413;stroke-opacity:0.400000}
+    .str0 {stroke:#F08C24;stroke-width:59.58;stroke-miterlimit:22.9256;stroke-opacity:0.400000}
     .fil0 {fill:none}
    ]]>
   </style>
  </defs>
  <g id="Camada_x0020_1">
   <metadata id="CorelCorpID_0Corel-Layer"/>
-  <g id="_1498516988544">
-   <g>
-    <g>
-     <path class="fil0 str0" d="M96843.48 48755.71c0,-26742.61 -21679.17,-48421.79 -48421.74,-48421.79 -26742.61,0 -48421.74,21679.17 -48421.74,48421.79 0,26742.57 21679.13,48421.74 48421.74,48421.74 26742.57,0 48421.74,-21679.17 48421.74,-48421.74z"/>
-    </g>
-   </g>
-  </g>
+  <path class="fil0 str0" d="M6427.7 563.19c168.63,92.88 330.71,196.81 485.18,310.95m226.84 179.59c73.61,62.38 145.18,127.24 214.54,194.47m1161.61 1965.99c50.3,184.49 88.73,373.89 114.39,567.32m28.34 285.47c6.34,95.97 9.57,192.82 9.57,290.41m-354.66 1720.18c-76.9,177.7 -165.36,349.23 -264.41,513.63m-157.52 242.7c-55.4,79.43 -113.41,156.94 -173.89,232.36m-1845.52 1342.91c-178.78,67.62 -363.21,123.73 -552.39,167.39m-282.8 55.35c-94.23,15.19 -189.49,27.33 -285.66,36.31m-2248.85 -392.79c-174.99,-82.67 -343.55,-176.76 -504.72,-281.3m-235.92 -164.39c-77.45,-57.88 -152.92,-118.31 -226.25,-181.15m-1282.39 -1889.08c-61.84,-181.03 -112.04,-367.49 -149.7,-558.45m-46.3 -284.42c-12.29,-95.48 -21.49,-191.94 -27.46,-289.26m461.46 -2234.73c88.03,-172.83 187.32,-338.97 296.89,-497.41m171.22 -230.88c60.28,-75.9 123.06,-149.74 188.19,-221.37m1925.74 -1225.02c182.54,-56.17 370.24,-100.58 562.2,-132.3m284.89 -37.4c95.16,-9.29 191.25,-15.49 288.13,-18.49"/>
  </g>
 </svg>
