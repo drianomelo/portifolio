@@ -199,10 +199,16 @@
       & > .planets__line-about {
         opacity: 1;
       }
+      & > .planets__text-about {
+        opacity: 1;
+      }
     }
 
     &__project:hover {
       & > .planets__line-project {
+        opacity: 1;
+      }
+      & > .planets__text-project {
         opacity: 1;
       }
     }
@@ -211,10 +217,16 @@
       & > .planets__line-contact {
         opacity: 1;
       }
+      & > .planets__text-contact {
+        opacity: 1;
+      }
     }
 
     &__more:hover {
       & > .planets__line-more {
+        opacity: 1;
+      }
+      & > .planets__text-more {
         opacity: 1;
       }
     }
@@ -337,6 +349,43 @@
       position: absolute;
       left: -640%;
       top: 382%;
+    }
+
+    &__text-about,
+    &__text-project,
+    &__text-contact,
+    &__text-more {
+      width: 16rem;
+      height: 10rem;
+      opacity: 0;
+      background-color: var(--clr-red);
+      box-shadow: 0 0 150px var(--clr-red);
+      border-radius: 1rem;
+      position: absolute;
+      top: -282%;
+      left: -915%;
+      transition: all 2s;
+    }
+
+    &__text-project {
+      background-color: var(--clr-orange);
+      box-shadow: 0 0 150px var(--clr-orange);
+      top: -50%;
+      left: 455%;
+    }
+
+    &__text-contact {
+      background-color: var(--clr-purple);
+      box-shadow: 0 0 150px var(--clr-purple);
+      top: -510%;
+      left: 540%;
+    }
+
+    &__text-more {
+      background-color: var(--clr-blue);
+      box-shadow: 0 0 150px var(--clr-blue);
+      top: -115%;
+      left: -2240%;
     }
   }
 }
