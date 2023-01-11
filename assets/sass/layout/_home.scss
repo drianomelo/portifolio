@@ -131,14 +131,14 @@
 
       &::before {
         content: "";
-        animation: pulsation-about 2s linear 1s infinite;
+        animation: pulsation-about 2s linear infinite;
         display: inline-block;
         width: 1rem;
         height: 1rem;
         opacity: 0;
         background: none;
         border-radius: 50%;
-        border: 2px solid var(--clr-red);
+        border: 1px solid var(--clr-red);
         transition: all 0.3s;
       }
     }
@@ -152,6 +152,12 @@
       height: 1.8rem;
       top: 79%;
       left: 65%;
+
+      &::before {
+        content: "";
+        animation: pulsation-project 2s linear 1s infinite;
+        border: 1px solid var(--clr-orange);
+      }
     }
 
     &__contact {
@@ -163,6 +169,12 @@
       height: 1.5rem;
       top: 40%;
       left: 78%;
+
+      &::before {
+        content: "";
+        animation: pulsation-contact 2s linear .5s infinite;
+        border: 1px solid var(--clr-purple);
+      }
     }
 
     &__more {
@@ -174,6 +186,12 @@
       height: 1rem;
       top: 60%;
       left: 26%;
+
+      &::before {
+        content: "";
+        animation: pulsation-more 2s linear 1.5s infinite;
+        border: 1px solid var(--clr-blue);
+      }
     }
   }
 }

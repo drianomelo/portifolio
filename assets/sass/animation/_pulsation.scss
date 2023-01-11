@@ -1,16 +1,63 @@
 @keyframes pulsation-about {
-  0% {
+  from {
     opacity: 1;
+    transform: scale3d(1, 1, 1);
   }
 
-  90% {
-    width: 4rem;
-    height: 4rem;
+  80% {
+    transform: scale3d(4, 4, 4);
   }
 
   100% {
     opacity: 0;
-    width: 4rem;
-    height: 4rem;
+    transform: scale3d(5, 5, 5);
+  }
+}
+
+@keyframes pulsation-project {
+  from {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+
+  80% {
+    transform: scale3d(3, 3, 3);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale3d(4, 4, 4);
+  }
+}
+
+@keyframes pulsation-contact {
+  from {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+
+  80% {
+    transform: scale3d(2.5, 2.5, 2.5);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale3d(3.5, 3.5, 3.5);
+  }
+}
+
+@keyframes pulsation-more {
+  from {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+
+  80% {
+    transform: scale3d(2, 2, 2);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale3d(3, 3, 3);
   }
 }

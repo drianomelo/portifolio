@@ -124,15 +124,15 @@ body {
 }
 .home .planets__about::before, .home .planets__project::before, .home .planets__contact::before, .home .planets__more::before {
   content: "";
-  -webkit-animation: pulsation-about 2s linear 1s infinite;
-          animation: pulsation-about 2s linear 1s infinite;
+  -webkit-animation: pulsation-about 2s linear infinite;
+          animation: pulsation-about 2s linear infinite;
   display: inline-block;
   width: 1rem;
   height: 1rem;
   opacity: 0;
   background: none;
   border-radius: 50%;
-  border: 2px solid var(--clr-red);
+  border: 1px solid var(--clr-red);
   transition: all 0.3s;
 }
 .home .planets__project {
@@ -144,6 +144,12 @@ body {
   top: 79%;
   left: 65%;
 }
+.home .planets__project::before {
+  content: "";
+  -webkit-animation: pulsation-project 2s linear 1s infinite;
+          animation: pulsation-project 2s linear 1s infinite;
+  border: 1px solid var(--clr-orange);
+}
 .home .planets__contact {
   background-color: var(--clr-purple);
   border-radius: 50%;
@@ -153,6 +159,12 @@ body {
   top: 40%;
   left: 78%;
 }
+.home .planets__contact::before {
+  content: "";
+  -webkit-animation: pulsation-contact 2s linear 0.5s infinite;
+          animation: pulsation-contact 2s linear 0.5s infinite;
+  border: 1px solid var(--clr-purple);
+}
 .home .planets__more {
   background-color: var(--clr-blue);
   border-radius: 50%;
@@ -161,6 +173,12 @@ body {
   height: 1rem;
   top: 60%;
   left: 26%;
+}
+.home .planets__more::before {
+  content: "";
+  -webkit-animation: pulsation-more 2s linear 1.5s infinite;
+          animation: pulsation-more 2s linear 1.5s infinite;
+  border: 1px solid var(--clr-blue);
 }
 
 @-webkit-keyframes rotate {
@@ -175,30 +193,106 @@ body {
   }
 }
 @-webkit-keyframes pulsation-about {
-  0% {
+  from {
     opacity: 1;
+    transform: scale3d(1, 1, 1);
   }
-  90% {
-    width: 4rem;
-    height: 4rem;
+  80% {
+    transform: scale3d(4, 4, 4);
   }
   100% {
     opacity: 0;
-    width: 4rem;
-    height: 4rem;
+    transform: scale3d(5, 5, 5);
   }
 }
 @keyframes pulsation-about {
-  0% {
+  from {
     opacity: 1;
+    transform: scale3d(1, 1, 1);
   }
-  90% {
-    width: 4rem;
-    height: 4rem;
+  80% {
+    transform: scale3d(4, 4, 4);
   }
   100% {
     opacity: 0;
-    width: 4rem;
-    height: 4rem;
+    transform: scale3d(5, 5, 5);
+  }
+}
+@-webkit-keyframes pulsation-project {
+  from {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+  80% {
+    transform: scale3d(3, 3, 3);
+  }
+  100% {
+    opacity: 0;
+    transform: scale3d(4, 4, 4);
+  }
+}
+@keyframes pulsation-project {
+  from {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+  80% {
+    transform: scale3d(3, 3, 3);
+  }
+  100% {
+    opacity: 0;
+    transform: scale3d(4, 4, 4);
+  }
+}
+@-webkit-keyframes pulsation-contact {
+  from {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+  80% {
+    transform: scale3d(2.5, 2.5, 2.5);
+  }
+  100% {
+    opacity: 0;
+    transform: scale3d(3.5, 3.5, 3.5);
+  }
+}
+@keyframes pulsation-contact {
+  from {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+  80% {
+    transform: scale3d(2.5, 2.5, 2.5);
+  }
+  100% {
+    opacity: 0;
+    transform: scale3d(3.5, 3.5, 3.5);
+  }
+}
+@-webkit-keyframes pulsation-more {
+  from {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+  80% {
+    transform: scale3d(2, 2, 2);
+  }
+  100% {
+    opacity: 0;
+    transform: scale3d(3, 3, 3);
+  }
+}
+@keyframes pulsation-more {
+  from {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+  80% {
+    transform: scale3d(2, 2, 2);
+  }
+  100% {
+    opacity: 0;
+    transform: scale3d(3, 3, 3);
   }
 }/*# sourceMappingURL=app.css.map */
