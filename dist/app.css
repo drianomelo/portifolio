@@ -60,10 +60,14 @@ body {
   -webkit-animation: up-down 3s ease-in-out alternate infinite;
           animation: up-down 3s ease-in-out alternate infinite;
   position: absolute;
-  top: 15%;
-  left: 8%;
+  top: 10%;
+  left: 5%;
 }
-.home__astronauta img {
+.home__img {
+  position: relative;
+  z-index: 2;
+}
+.home__img img {
   width: 9rem;
 }
 .home__line-1 {
@@ -71,8 +75,28 @@ body {
   width: 3rem;
   height: 0.2rem;
   position: absolute;
-  left: 50%;
-  top: 30%;
+  left: 60%;
+  top: 35%;
+  z-index: 1;
+}
+.home__line-2 {
+  background-color: var(--clr-white);
+  width: 4rem;
+  height: 0.2rem;
+  transform: rotate(-60deg);
+  position: absolute;
+  left: 81%;
+  top: 20.5%;
+  z-index: 1;
+}
+.home__line-3 {
+  background-color: var(--clr-white);
+  width: 19rem;
+  height: 0.2rem;
+  position: absolute;
+  left: 114%;
+  top: 6%;
+  z-index: 1;
 }
 .home .circles {
   width: 366px;
@@ -498,12 +522,12 @@ body {
 }
 @-webkit-keyframes up-down {
   to {
-    transform: translateY(10%);
+    transform: translateY(12%);
   }
 }
 @keyframes up-down {
   to {
-    transform: translateY(10%);
+    transform: translateY(12%);
   }
 }
 @-webkit-keyframes stars {
