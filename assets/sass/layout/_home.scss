@@ -63,19 +63,27 @@
     height: 0.2rem;
     transform: rotate(-60deg);
     position: absolute;
-    left:81%;
+    left: 81%;
     top: 20.5%;
     z-index: 1;
   }
 
   &__line-3 {
     background-color: var(--clr-white);
-    width: 19rem;
+    width: 14.5rem;
     height: 0.2rem;
     position: absolute;
     left: 114%;
     top: 6%;
     z-index: 1;
+  }
+
+  &__title {
+    width: 250%;
+    position: absolute;
+    font-size: 1rem;
+    top: -5%;
+    left: 120%;
   }
 
   .circles {

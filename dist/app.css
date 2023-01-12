@@ -91,12 +91,19 @@ body {
 }
 .home__line-3 {
   background-color: var(--clr-white);
-  width: 19rem;
+  width: 14.5rem;
   height: 0.2rem;
   position: absolute;
   left: 114%;
   top: 6%;
   z-index: 1;
+}
+.home__title {
+  width: 250%;
+  position: absolute;
+  font-size: 1rem;
+  top: -5%;
+  left: 120%;
 }
 .home .circles {
   width: 366px;
