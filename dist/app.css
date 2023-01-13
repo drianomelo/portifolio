@@ -429,6 +429,12 @@ body {
   position: absolute;
   bottom: -5%;
 }
+.about__astronauta img {
+  position: absolute;
+  top: 35%;
+  left: 47%;
+  width: 20rem;
+}
 
 @-webkit-keyframes rotate {
   to {
