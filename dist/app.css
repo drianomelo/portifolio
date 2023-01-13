@@ -18,6 +18,19 @@ body {
   font-weight: 400;
 }
 
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--clr-black);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--clr-white);
+  border-radius: 1rem;
+}
+
 :root {
   --clr-black: #101820;
   --clr-white: #f4f4f4;
