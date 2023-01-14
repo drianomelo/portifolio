@@ -435,16 +435,66 @@ body {
   width: 100%;
   height: 100vh;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
 }
-.about__planet img:first-child {
+.about__planet {
   width: 100%;
+}
+.about__img {
   position: absolute;
-  bottom: -5%;
-  left: 0;
+  top: 28%;
+  z-index: 30;
+  width: 100%;
+}
+.about__line-1 {
+  width: 3rem;
+  height: 0.3rem;
+  background-color: var(--clr-white);
+  position: absolute;
+  top: 45%;
+  left: 63%;
+  z-index: 10;
+}
+.about__line-2 {
+  width: 5rem;
+  height: 0.3rem;
+  background-color: var(--clr-white);
+  transform: rotate(-60deg);
+  position: absolute;
+  top: 40.7%;
+  left: 64.7%;
+}
+.about__line-3 {
+  width: 2rem;
+  height: 0.3rem;
+  background-color: var(--clr-white);
+  position: absolute;
+  top: 36.5%;
+  left: 68.55%;
+}
+.about__text {
+  width: 20rem;
+  height: 12rem;
+  background-color: var(--clr-white);
+  border-radius: 1rem;
+  position: absolute;
+  left: 70.5%;
+  top: 24%;
+  padding: 1rem;
+}
+.about__text h3 {
+  color: var(--clr-black);
+}
+.about__text div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.about__text div img {
+  margin-top: 0.5rem;
+  width: 4rem;
+  border-radius: 50%;
+  border: 3px solid var(--clr-black);
 }
 
 @-webkit-keyframes rotate {
