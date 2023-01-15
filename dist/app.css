@@ -16,6 +16,9 @@ body {
   font-family: var(--ff-roboto);
   font-size: 1rem;
   font-weight: 400;
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
 }
 
 *::-webkit-scrollbar {
@@ -23,12 +26,31 @@ body {
 }
 
 *::-webkit-scrollbar-track {
-  background: var(--clr-black);
+  background: transparent;
 }
 
 *::-webkit-scrollbar-thumb {
   background-color: var(--clr-white);
   border-radius: 1rem;
+}
+
+.stars-1 img {
+  -webkit-animation: stars 20s linear alternate infinite;
+          animation: stars 20s linear alternate infinite;
+  width: 110%;
+  position: absolute;
+  top: 0%;
+  left: -5%;
+  opacity: 0.1;
+}
+
+.stars-2 img {
+  animation: stars 25s linear alternate-reverse infinite;
+  width: 110%;
+  position: absolute;
+  top: 0;
+  left: -5%;
+  opacity: 1;
 }
 
 :root {
@@ -42,31 +64,12 @@ body {
 }
 
 .home {
-  background-image: radial-gradient(ellipse closest-side at 50% 50%, #1a2633 20%, #111a22 70%, #101820);
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   width: 100%;
   position: relative;
-  overflow: hidden;
-}
-.home__stars-1 img {
-  -webkit-animation: stars 20s linear alternate infinite;
-          animation: stars 20s linear alternate infinite;
-  width: 110%;
-  position: absolute;
-  top: -45%;
-  left: -5%;
-  opacity: 0.1;
-}
-.home__stars-2 img {
-  animation: stars 25s linear alternate-reverse infinite;
-  width: 110%;
-  position: absolute;
-  top: -45%;
-  left: -5%;
-  opacity: 1;
 }
 .home__astronauta {
   -webkit-animation: up-down 3s ease-in-out alternate infinite;
