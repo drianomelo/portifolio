@@ -67,7 +67,7 @@
       justify-content: space-evenly;
 
       img {
-        margin-top: .5rem;
+        margin-top: 0.5rem;
         width: 4rem;
         border-radius: 50%;
         border: 3px solid var(--clr-black);
@@ -75,5 +75,15 @@
     }
   }
 
-  
+  &__main {
+    width: 35rem;
+    height: 20rem;
+    background-color: none;
+    border: 3px solid var(--clr-red);
+    // box-shadow: 0 0 150px var(--clr-red);
+    border-radius: 1rem;
+    position: absolute;
+    top: 6%;
+    left: 3%;
+  }
 }
