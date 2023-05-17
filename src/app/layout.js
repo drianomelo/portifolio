@@ -1,7 +1,7 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+import localFont from "@next/font/local";
+const grobold = localFont({ src: "../../public/font/GROBOLD.ttf" });
 
 export const metadata = {
   title: "Driano.css | Portifólio",
@@ -10,8 +10,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="pt-br">
+      <body className={grobold.className}>{children}</body>
     </html>
   );
 }
