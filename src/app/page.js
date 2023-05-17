@@ -9,7 +9,7 @@ export default function Home() {
         ></img>
       </div>
       <div className="w-lg h-3/4 bg-border-medium p-6 border-t-2 border-b border-x-2 border-border-light border-x-4 shadow-3xl relative bottom-7">
-        <div className="w-full h-full bg-cenario bg-cover px-6 py-4 border-t-8 border-l-4 border-r-4 border-border-dark">
+        <div className="w-full h-full bg-cenario bg-cover px-6 py-4 border-t-8 border-l-4 border-r-4 border-border-dark flex flex-col justify-between">
           <header className="flex items-center justify-center relative">
             <div className="flex items-center gap-5 absolute left-0">
               <div className="w-48 h-14 p-2 bg-clr-bege-light border-3 border-clr-bege relative">
@@ -49,22 +49,55 @@ export default function Home() {
               </button>
               <div className="flex flex-col gap-3 mt-5">
                 <div className="w-44 h-8 pt-1 pl-6 bg-clr-bege-light border-3 border-clr-bege text-base text-clr-black flex items-center relative">
-                  <img className="w-10 absolute -left-5 -top-2" src="/img/moeda.png"></img>
+                  <img
+                    className="w-10 absolute -left-5 -top-2"
+                    src="/img/moeda.png"
+                  ></img>
                   Adriano Melo
                 </div>
                 <div className="w-44 h-8 pt-1 pl-6 bg-clr-bege-light border-3 border-clr-bege text-base text-clr-black flex items-center relative">
-                  <img className="w-10 absolute -left-5 -top-2" src="/img/donut.png"></img>
+                  <img
+                    className="w-10 absolute -left-5 -top-2"
+                    src="/img/donut.png"
+                  ></img>
                   21 anos
                 </div>
               </div>
             </div>
           </header>
           <div>
-            <aside></aside>
+            <aside>
+              <div></div>
+            </aside>
             <main></main>
             <aside></aside>
           </div>
-          <footer></footer>
+          <footer className="flex gap-3 justify-center">
+            <a
+              className="rounded-full transition-all hover:scale-110 hover:shadow-yellow"
+              href="#"
+            >
+              <img className="w-24" src="/img/modulo-about.svg"></img>
+            </a>
+            <a
+              className="rounded-full transition-all hover:scale-110 hover:shadow-yellow"
+              href="#"
+            >
+              <img className="w-24" src="/img/modulo-project.png"></img>
+            </a>
+            <a
+              className="rounded-full transition-all hover:scale-110 hover:shadow-yellow"
+              href="#"
+            >
+              <img className="w-24" src="/img/modulo-contact.svg"></img>
+            </a>
+            <a
+              className="rounded-full transition-all hover:scale-110 hover:shadow-yellow"
+              href="#"
+            >
+              <img className="w-24" src="/img/modulos.svg"></img>
+            </a>
+          </footer>
         </div>
       </div>
       <div></div>
