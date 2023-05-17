@@ -66,8 +66,8 @@ export default function Home() {
             </div>
           </header>
           <div>
-            <aside>
-              <div></div>
+            <aside className="w-52 bg-clr-gray">
+              <div className="w-3/4 h-8"></div>
             </aside>
             <main></main>
             <aside></aside>
