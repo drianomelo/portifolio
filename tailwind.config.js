@@ -26,10 +26,14 @@ module.exports = {
         "clr-purple": "#8E00CC",
         "clr-purple-dark": "#67158A",
         "clr-yellow": "#C08A00",
+        "clr-black": "#302B28",
       },
       boxShadow: {
         "2xl": "4px 4px 0px ",
         "3xl": "6px 10px 0px 0px rgba(0, 0, 0, 0.9)",
+      },
+      width: {
+        lg: "1140px",
       },
     },
   },
