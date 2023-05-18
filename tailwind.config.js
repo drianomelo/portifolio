@@ -17,6 +17,7 @@ module.exports = {
         6: "6px",
       },
       colors: {
+        "bg-black": "#040710",
         "border-light": "#383838",
         "border-medium": "#262626",
         "border-dark": "#131717",
@@ -55,6 +56,9 @@ module.exports = {
       },
       width: {
         lg: "1140px",
+      },
+      height: {
+        md: "760px",
       },
       borderRadius: {
         "4xl": "2rem",
