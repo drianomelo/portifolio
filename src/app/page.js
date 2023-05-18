@@ -1,3 +1,5 @@
+import { Inter } from "next/font/google";
+
 export default function Home() {
   return (
     <div className="h-screen bg-background-dark bg-cover flex  items-center flex-col">
@@ -10,7 +12,7 @@ export default function Home() {
       </div>
       <div className="w-lg h-3/4 bg-border-medium p-6 border-t-2 border-b border-x-2 border-border-light border-x-4 shadow-3xl relative bottom-7">
         <div className="w-full h-full bg-cenario bg-cover px-6 py-4 border-t-8 border-l-4 border-r-4 border-border-dark flex flex-col justify-between">
-          <header className="flex items-center justify-center relative">
+          <header className="flex items-center justify-center mb-24 relative">
             <div className="flex items-center gap-5 absolute left-0">
               <div className="w-48 h-14 p-2 bg-clr-bege-light border-3 border-clr-bege relative">
                 <div className="w-full h-full bg-clr-bege-medium border-t-8 border-r-2 border-clr-bege-dark"></div>
@@ -65,12 +67,81 @@ export default function Home() {
               </div>
             </div>
           </header>
-          <div>
-            <aside className="w-52 bg-clr-gray">
-              <div className="w-3/4 h-8"></div>
+          <div
+            className="flex flex-1 justify-between items-start
+          "
+          >
+            <aside className="flex flex-col gap-2 w-52 p-2 bg-clr-gray border-2 border-clr-gray-dark">
+              <div className="w-full h-7 bg-clr-gray-medium border-2 border-clr-gray-light rounded-2xl relative">
+                <div className="w-8 h-8 bg-clr-gray border-2 border-clr-gray-light rounded-full flex items-center justify-center absolute -left-1 -top-1">
+                  <img className="w-6" src="/img/html.svg"></img>
+                </div>
+                <div className="w-full h-full rounded-2xl bg-gradient-to-t from-clr-pink-light to-clr-pink-dark"></div>
+              </div>
+              <div className="w-full h-7 bg-clr-gray-medium border-2 border-clr-gray-light rounded-2xl relative">
+                <div className="w-8 h-8 bg-clr-gray border-2 border-clr-gray-light rounded-full flex items-center justify-center absolute -left-1 -top-1">
+                  <img className="w-6" src="/img/css.svg"></img>
+                </div>
+                <div className="w-full h-full rounded-2xl bg-gradient-to-t from-clr-pink-light to-clr-pink-dark"></div>
+              </div>
+              <div className="w-full h-7 bg-clr-gray-medium border-2 border-clr-gray-light rounded-2xl relative">
+                <div className="w-8 h-8 bg-clr-gray border-2 border-clr-gray-light rounded-full flex items-center justify-center absolute -left-1 -top-1">
+                  <img className="w-6" src="/img/js.svg"></img>
+                </div>
+                <div className="w-full h-full rounded-2xl bg-gradient-to-t from-clr-pink-light to-clr-pink-dark"></div>
+              </div>
+              <div className="w-full h-7 bg-clr-gray-medium border-2 border-clr-gray-light rounded-2xl relative">
+                <div className="w-8 h-8 bg-clr-gray border-2 border-clr-gray-light rounded-full flex items-center justify-center absolute -left-1 -top-1">
+                  <img className="w-6" src="/img/react.svg"></img>
+                </div>
+                <div className="w-full h-full rounded-2xl bg-gradient-to-t from-clr-pink-light to-clr-pink-dark"></div>
+              </div>
+              <div className="w-full h-7 bg-clr-gray-medium border-2 border-clr-gray-light rounded-2xl relative">
+                <div className="w-8 h-8 bg-clr-gray border-2 border-clr-gray-light rounded-full flex items-center justify-center absolute -left-1 -top-1">
+                  <img className="w-6" src="/img/tailwind.svg"></img>
+                </div>
+                <div className="w-full h-full rounded-2xl bg-gradient-to-t from-clr-pink-light to-clr-pink-dark"></div>
+              </div>
             </aside>
-            <main></main>
-            <aside></aside>
+            <main className=""></main>
+            <aside className="relative aside-r flex flex-col gap-2 w-52 p-2 pb-8 bg-clr-gray border-2 border-clr-gray-dark">
+              <div className="flex flex-col gap-1">
+                <div className="w-full h-8 py-1 px-2 rounded-xl flex items-center bg-clr-gray-2">
+                  <img className="w-6 mr-2.5" src="/img/logo-ditin.png"></img>
+                  <p className="text-zinc-50">DITIN</p>
+                </div>
+                <div className="w-full h-8 py-1 px-2 rounded-xl flex items-center bg-clr-gray-2">
+                  <img className="w-6 mr-2.5" src="/img/logo-ditin.png"></img>
+                  <p className="text-zinc-50">DITIN</p>
+                </div>
+                <div className="w-full h-8 py-1 px-2 rounded-xl flex items-center bg-clr-gray-2">
+                  <img className="w-6 mr-2.5" src="/img/logo-ditin.png"></img>
+                  <p className="text-zinc-50">DITIN</p>
+                </div>
+              </div>
+              <div className="flex gap-3 justify-center">
+                <a href="github.com/drianomelo">
+                  <img className="w-10" src="/img/github.svg"></img>
+                </a>
+                <a href="github.com/drianomelo">
+                  <img className="w-10" src="/img/linkedin.svg"></img>
+                </a>
+                <a href="github.com/drianomelo">
+                  <img className="w-10" src="/img/email.svg"></img>
+                </a>
+              </div>
+              <div className="w-full h-36 bg-clr-gray-3 p-3 rounded-lg border-2 border-clr-gray-light shadow-2xl-inner-gray">
+                <p className="text-zinc-300 text-xs text-justify">
+                  Meu nome é Adriano Melo, tenho 21 anos, sou estudante de
+                  Sistemas de Informação na Universidade Federal de Seripe,
+                  estagio na Diretoria de Tecnologia da Informação de São
+                  Cristóvão.
+                </p>
+              </div>
+              <button className="flex justify-center items-center w-20 h-10 rounded-md bg-gradient-to-t from-clr-orange-light to-clr-orange border-t-2 border-t-clr-yellow border-l-2 border-l-clr-orange-dark border-b-1 border-b-clr-orange-dark border-r-1 border-r-clr-yellow absolute -bottom-6 left-2/4 -translate-x-2/4 transition-all hover:scale-105">
+                <img className="w-7" src="/img/logo.svg"></img>
+              </button>
+            </aside>
           </div>
           <footer className="flex gap-3 justify-center">
             <a
@@ -100,7 +171,47 @@ export default function Home() {
           </footer>
         </div>
       </div>
-      <div></div>
+      <div className="footer">
+        <p className="text-xxs text-clr-font-light">
+          Desenvolvido por Driano.css <span className="mx-2">|</span> © Todos os direitos reservados <span className="mx-2">|</span> <a href="https://herozerogame.com">Hero Zero</a>
+        </p>
+      </div>
+      {/* <div className="flex flex-col items-center justify-center w-2/6 h-96 bg-clr-bege-light rounded-xl border-4 border-clr-bege fixed top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 z-50">
+        <div className="flex justify-center items-center w-2/3 h-16 bg-clr-green rounded-3xl rounded-tl-4xl rounded-tr-4xl border-t-3 border-t-clr-green-light border-b-3 border-b-clr-green-dark absolute -top-7">
+          <p
+            className="text-zinc-200 text-2xl
+          "
+          >
+            Informacoes
+          </p>
+        </div>
+        <div className="modal flex flex-col gap-3 text-clr-font font-semibold px-10">
+          <p>
+            Bem-vindo(a) ao meu portifólio, nele você encontrará informações sobre mim, além de poder ver meus
+            projetos, contatos, skills e redes sociais. Ele foi todo inspirado nas artes do
+            jogo{" "}
+            <a
+              className="text-blue-700 font-bold"
+              href="https://herozerogame.com"
+              target="_blank"
+            >
+              HERO ZERO
+            </a>
+            .
+          </p>
+          <p>
+            Passe o mouse sobre todos os itens das páginas para mais informações
+            e interações.
+          </p>
+          <p>
+            No rodapé da página você pode escolher pela opção mais "Clean" do
+            meu portifólio.
+          </p>
+        </div>
+        <button className="text-zinc-50 flex justify-center items-center w-36 h-10 rounded-xl bg-gradient-to-t from-clr-orange-light to-clr-orange border-t-2 border-t-clr-yellow border-l-2 border-l-clr-orange-dark border-b-1 border-b-clr-orange-dark border-r-1 border-r-clr-yellow absolute -bottom-6 left-2/4 -translate-x-2/4 transition-all hover:scale-105">
+          OK
+        </button>
+      </div> */}
     </div>
   );
 }
