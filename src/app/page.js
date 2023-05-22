@@ -74,31 +74,56 @@ export default function Home() {
                 <div className="w-8 h-8 bg-clr-gray border-2 border-clr-gray-light rounded-full flex items-center justify-center absolute -left-1 -top-1">
                   <img className="w-6" src="/img/html.svg"></img>
                 </div>
-                <div className="w-full h-full rounded-2xl bg-gradient-to-t from-clr-pink-light to-clr-pink-dark"></div>
+                <div>
+                  <img
+                    className="rounded-2xl w-full h-6"
+                    src="/img/barra-html.png"
+                  ></img>
+                </div>
               </div>
               <div className="w-full h-7 bg-clr-gray-medium border-2 border-clr-gray-light rounded-2xl relative">
                 <div className="w-8 h-8 bg-clr-gray border-2 border-clr-gray-light rounded-full flex items-center justify-center absolute -left-1 -top-1">
                   <img className="w-6" src="/img/css.svg"></img>
                 </div>
-                <div className="w-full h-full rounded-2xl bg-gradient-to-t from-clr-pink-light to-clr-pink-dark"></div>
+                <div>
+                  <img
+                    className="rounded-2xl w-full h-6"
+                    src="/img/barra-css.png"
+                  ></img>
+                </div>
               </div>
               <div className="w-full h-7 bg-clr-gray-medium border-2 border-clr-gray-light rounded-2xl relative">
                 <div className="w-8 h-8 bg-clr-gray border-2 border-clr-gray-light rounded-full flex items-center justify-center absolute -left-1 -top-1">
                   <img className="w-6" src="/img/js.svg"></img>
                 </div>
-                <div className="w-full h-full rounded-2xl bg-gradient-to-t from-clr-pink-light to-clr-pink-dark"></div>
+                <div>
+                  <img
+                    className="w-full h-6 rounded-2xl"
+                    src="/img/barra-js.png"
+                  ></img>
+                </div>
               </div>
               <div className="w-full h-7 bg-clr-gray-medium border-2 border-clr-gray-light rounded-2xl relative">
                 <div className="w-8 h-8 bg-clr-gray border-2 border-clr-gray-light rounded-full flex items-center justify-center absolute -left-1 -top-1">
                   <img className="w-6" src="/img/react.svg"></img>
                 </div>
-                <div className="w-full h-full rounded-2xl bg-gradient-to-t from-clr-pink-light to-clr-pink-dark"></div>
+                <div>
+                  <img
+                    className="w-full h-6 rounded-2xl"
+                    src="/img/barra-react.png"
+                  ></img>
+                </div>
               </div>
               <div className="w-full h-7 bg-clr-gray-medium border-2 border-clr-gray-light rounded-2xl relative">
                 <div className="w-8 h-8 bg-clr-gray border-2 border-clr-gray-light rounded-full flex items-center justify-center absolute -left-1 -top-1">
                   <img className="w-6" src="/img/tailwind.svg"></img>
                 </div>
-                <div className="w-full h-full rounded-2xl bg-gradient-to-t from-clr-pink-light to-clr-pink-dark"></div>
+                <div>
+                  <img
+                    className="w-full h-6 rounded-2xl"
+                    src="/img/barra-tailwind.png"
+                  ></img>
+                </div>
               </div>
             </aside>
             <main className=""></main>
@@ -119,13 +144,22 @@ export default function Home() {
               </div>
               <div className="flex gap-3 justify-center">
                 <a href="github.com/drianomelo">
-                  <img className="w-10" src="/img/github.svg"></img>
+                  <img
+                    className="w-9 transition-all hover:scale-110"
+                    src="/img/github.svg"
+                  ></img>
                 </a>
                 <a href="github.com/drianomelo">
-                  <img className="w-10" src="/img/linkedin.svg"></img>
+                  <img
+                    className="w-9 transition-all hover:scale-110"
+                    src="/img/linkedin.svg"
+                  ></img>
                 </a>
                 <a href="github.com/drianomelo">
-                  <img className="w-10" src="/img/email.svg"></img>
+                  <img
+                    className="w-9 transition-all hover:scale-110"
+                    src="/img/email.svg"
+                  ></img>
                 </a>
               </div>
               <div className="w-full h-36 bg-clr-gray-3 p-3 rounded-lg border-2 border-clr-gray-light shadow-2xl-inner-gray">
@@ -178,7 +212,7 @@ export default function Home() {
       </div>
       <div
         id="modal-info"
-        className="flex flex-col items-center justify-center w-2/6 h-96 bg-clr-bege-light rounded-xl border-4 border-clr-bege fixed top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 z-50"
+        className="hidden flex flex-col items-center justify-center w-2/6 h-96 bg-clr-bege-light rounded-xl border-4 border-clr-bege fixed top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 z-50"
       >
         <div className="flex justify-center items-center w-2/3 h-16 bg-clr-green rounded-3xl rounded-tl-4xl rounded-tr-4xl border-t-3 border-t-clr-green-light border-b-3 border-b-clr-green-dark absolute -top-7">
           <p
