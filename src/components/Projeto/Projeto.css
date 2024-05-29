@@ -1,0 +1,37 @@
+.projeto {
+  width: 34rem;
+
+  background-color: var(--clr-white);
+  border: 2px solid var(--clr-blue);
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
+
+.projeto__header {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 1rem;
+
+  background-color: var(--clr-blue);
+}
+
+.projeto__bola {
+  width: 1rem;
+  height: 1rem;
+
+  border-radius: 100%;
+
+  background-color: var(--clr-red);
+}
+
+.projeto__main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 175px;
+}
+
+.projeto__main img {
+  width: 100%;
+}

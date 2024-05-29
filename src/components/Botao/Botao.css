@@ -1,0 +1,105 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem 2.4rem;
+
+  background-color: var(--clr-blue);
+  border-radius: 0.4rem;
+  color: var(--clr-white);
+  font-size: 1.8rem;
+  text-decoration: none;
+  overflow: hidden;
+
+  position: relative;
+  transition: all 0.5s;
+}
+
+.btn__name:first-child {
+  position: relative;
+  opacity: 0;
+}
+
+.btn__name:nth-child(2) {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 50;
+
+  transition: all 0.3s;
+}
+
+.btn__name:nth-child(3) {
+  position: absolute;
+  top: 6.4rem;
+  transform: translateY(-50%);
+  z-index: 50;
+
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: #60a5fa;
+}
+
+.btn:hover > .btn__name:nth-child(2) {
+  top: -50%;
+}
+
+.btn:hover > .btn__name:nth-child(3) {
+  top: 50%;
+}
+
+.btn__color {
+  width: 6.4rem;
+  height: 6.4rem;
+
+  border-radius: 100%;
+  transform: scale(0);
+
+  position: absolute;
+}
+
+.btn__color--red {
+  background-color: #f87171;
+}
+
+.btn__color--orange {
+  background-color: #fb923c;
+}
+
+.btn__color--yellow {
+  background-color: #facc15;
+}
+
+.btn__color--green {
+  background-color: #4ade80;
+}
+
+.btn:hover > .btn__color--red {
+  animation: scale 0.35s forwards ease-in;
+}
+
+.btn:hover > .btn__color--orange {
+  animation: scale 0.45s forwards ease-in;
+}
+
+.btn:hover > .btn__color--yellow {
+  animation: scale 0.55s forwards ease-in;
+}
+
+.btn:hover > .btn__color--green {
+  animation: scale 0.65s forwards ease-in;
+}
+
+/* ANIMATIONS */
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(2.7);
+  }
+}

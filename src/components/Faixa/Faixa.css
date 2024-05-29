@@ -1,0 +1,40 @@
+.faixa {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1.4rem 0;
+
+  font-size: 1.8rem;
+  text-wrap: nowrap;
+
+  position: absolute;
+  left: -110%;
+  z-index: 10;
+}
+
+.faixa__text {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.faixa__text i {
+  font-size: 0.6rem;
+}
+
+.faixa__normal {
+  background-color: var(--clr-white);
+  border: 1px solid var(--clr-blue);
+  color: var(--clr-blue);
+}
+
+
+@keyframes slide {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
