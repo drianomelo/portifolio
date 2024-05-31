@@ -10,7 +10,7 @@ export default function Faixa({ solid, rotacao, animacao }) {
         rotate: rotacao,
       }}
     >
-      <div class="faixa__text" style={{ animation: animacao }}>
+      <div className="faixa__text" style={{ animation: animacao }}>
         Desenvolvimento
         <i class="fa-solid fa-circle"></i>
         Design
@@ -53,7 +53,7 @@ export default function Faixa({ solid, rotacao, animacao }) {
         <i class="fa-solid fa-circle"></i>
       </div>
 
-      <div class="faixa__text" style={{ animation: animacao }}>
+      <div className="faixa__text" style={{ animation: animacao }}>
         Desenvolvimento
         <i class="fa-solid fa-circle"></i>
         Design
@@ -96,7 +96,7 @@ export default function Faixa({ solid, rotacao, animacao }) {
         <i class="fa-solid fa-circle"></i>
       </div>
 
-      <div class="faixa__text" style={{ animation: animacao }}>
+      <div className="faixa__text" style={{ animation: animacao }}>
         Desenvolvimento
         <i class="fa-solid fa-circle"></i>
         Design

@@ -1,8 +1,16 @@
 import "./Pilar.css";
 import pilar from "assets/images/pilar.png";
+import pilarMaior from "assets/images/pilar-maior.png";
 
-export default function Pilar({ children, mb, secondAnimation }) {
+export default function Pilar({
+  children,
+  mb,
+  secondAnimation,
+  srcPilar,
+  pad,
+}) {
   const animation = `float ${secondAnimation} infinite alternate ease-in-out`;
+  const tamanhoPilar = srcPilar === "pilar" ? pilar : pilarMaior;
 
   return (
     <div
@@ -23,10 +31,12 @@ export default function Pilar({ children, mb, secondAnimation }) {
           <div className="pilar__window-ball pilar__window-ball--yellow"></div>
           <div className="pilar__window-ball pilar__window-ball--green"></div>
         </div>
-        <div className="pilar__window-main">{children}</div>
+        <div className="pilar__window-main" style={{ padding: `0 ${pad}` }}>
+          {children}
+        </div>
       </div>
 
-      <img className="pilar__img" src={pilar} alt="Pilar" />
+      <img className="pilar__img" src={tamanhoPilar} alt="Pilar" />
     </div>
   );
 }

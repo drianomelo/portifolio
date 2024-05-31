@@ -10,7 +10,7 @@ export default function Banner() {
     <div className="container">
       <img className="container__img" src={nuvem} alt="Background Nuvem" />
       <div className="container__main">
-        <Pilar mb="-19rem" secondAnimation="3s">
+        <Pilar mb="-19rem" secondAnimation="3s" srcPilar="pilar">
           <img src={saturno} alt="Saturno" />
         </Pilar>
 
@@ -35,7 +35,7 @@ export default function Banner() {
           </div>
         </div>
 
-        <Pilar mb="-16rem" secondAnimation="2s">
+        <Pilar mb="-16rem" secondAnimation="2s" srcPilar="pilar">
           <img src={buraco} alt="Saturno" />
         </Pilar>
       </div>

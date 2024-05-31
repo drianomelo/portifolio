@@ -6,7 +6,7 @@
 }
 
 .pilar__window {
-  width: 24rem;
+  min-width: 24rem;
   height: 16rem;
 
   background-color: var(--clr-white);
@@ -50,6 +50,7 @@
 
 .pilar__window-main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 13.6rem;
@@ -57,6 +58,17 @@
 
 .pilar__window-main img {
   height: 80%;
+}
+
+.pilar__window-main h3 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--clr-blue);
+  margin: 0 4rem .5rem;
+}
+
+.pilar__window-main .btn {
+  width: 100%;
 }
 
 .pilar__img {
