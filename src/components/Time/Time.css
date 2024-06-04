@@ -1,0 +1,53 @@
+.time {
+  width: 100%;
+  padding-bottom: 10rem;
+  background-color: var(--clr-white);
+
+  position: relative;
+}
+
+.time__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.time__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.time__buraco {
+  position: absolute;
+
+  width: 40rem;
+}
+
+.time__buraco--left {
+  bottom: 10rem;
+  left: 5rem;
+  animation: left-right 3s ease-in-out alternate infinite;
+
+}
+
+.time__buraco--right {
+  width: 45rem;
+  bottom: 35rem;
+  right: -3rem;
+  animation: left-right 4s ease-in-out alternate-reverse infinite;
+
+}
+
+/* ANIMATIONS */
+
+@keyframes left-right {
+  0% {
+    transform: translateX(-8%);
+  }
+
+  100% {
+    transform: translateX(8%);
+  }
+}

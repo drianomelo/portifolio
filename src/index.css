@@ -16,11 +16,16 @@
 
 :root {
   --clr-blue: #1e3a8a;
+  --clr-blue-l: #3557b4;
   --clr-white: #fbf3f3;
   --clr-red: #f87171;
   --clr-orange: #fb923c;
   --clr-yellow: #facc15;
   --clr-green: #4ade80;
+}
+
+#root {
+  position: relative;
 }
 
 html {

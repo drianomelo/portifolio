@@ -1,0 +1,98 @@
+.card {
+  width: 35rem;
+
+  background-color: var(--clr-white);
+  border: 3px solid var(--clr-blue);
+  border-radius: 1.2rem;
+  text-decoration: none;
+  overflow: hidden;
+
+  position: relative;
+  z-index: 999;
+}
+
+.card:first-child,
+.card:nth-child(3) {
+  animation: float 3s infinite alternate ease-in-out;
+}
+
+.card:nth-child(2) {
+  animation: float 2s infinite alternate ease-in-out;
+}
+
+.card:nth-child(4) {
+  animation: float 4s infinite alternate-reverse ease-in-out;
+}
+
+.card:nth-child(5) {
+  animation: float 3.5s infinite alternate-reverse ease-in-out;
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 1rem;
+}
+
+.card__bola {
+  width: 1rem;
+  height: 1rem;
+
+  border-radius: 100%;
+}
+
+.card__bola--red {
+  background-color: var(--clr-red);
+}
+
+.card__bola--orange {
+  background-color: var(--clr-orange);
+}
+
+.card__bola--yellow {
+  background-color: var(--clr-yellow);
+}
+
+.card__bola--green {
+  background-color: var(--clr-green);
+}
+
+.card__main img {
+  filter: grayscale(1);
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.card:hover > .card__main img {
+  filter: grayscale(0);
+}
+
+.card__footer {
+  padding: 1.4rem;
+}
+
+.card__cargo {
+  color: var(--clr-blue);
+  font-family: "GT walsheim";
+  font-size: 2rem;
+
+  margin-bottom: 1rem;
+}
+
+.card__funcao {
+  color: var(--clr-blue);
+  font-size: 1.7rem;
+}
+
+/* ANIMATIONS */
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(8%);
+  }
+}

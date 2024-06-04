@@ -7,7 +7,7 @@ import buraco from "assets/images/buraco-negro.png";
 
 export default function Banner() {
   return (
-    <div className="container">
+    <section className="container">
       <img className="container__img" src={nuvem} alt="Background Nuvem" />
       <div className="container__main">
         <Pilar mb="-19rem" secondAnimation="3s" srcPilar="pilar">
@@ -39,6 +39,6 @@ export default function Banner() {
           <img src={buraco} alt="Saturno" />
         </Pilar>
       </div>
-    </div>
+    </section>
   );
 }

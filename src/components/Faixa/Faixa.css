@@ -28,6 +28,14 @@
   color: var(--clr-blue);
 }
 
+.faixa__solid {
+  background-color: var(--clr-blue);
+  border: 1px solid var(--clr-white);
+  color: var(--clr-white);
+  left: -113%;
+
+}
+
 
 @keyframes slide {
   from {

@@ -1,7 +1,7 @@
 import "./Portifolio.css";
 import arco from "assets/images/arco.png";
 import metadeArco from "assets/images/metade-arco.png";
-import nuvem from "assets/images/nuvem.png";
+import nuvem from "assets/images/borda-nuvem.png";
 import Botao from "components/Botao";
 import Faixa from "components/Faixa";
 import Pilar from "components/Pilar";
@@ -10,7 +10,7 @@ import Titulo from "components/Titulo";
 
 export default function Portifolio() {
   return (
-    <div className="portifolio">
+    <section className="portifolio">
       <div className="portifolio__imagens">
         <div className="portifolio__arco">
           <img src={arco} alt="Arco" />
@@ -30,9 +30,11 @@ export default function Portifolio() {
       </div>
       <div className="portifolio__container">
         <Titulo
+          color="#1e3a8a"
+          size="9rem"
           titulo="Meus Projetos"
           desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo impedit iste tempora, consequatur dicta aperiam praesentium inventore dolore. Architecto fuga ullam cum nostrum at modi est quos rerum quaerat! Expedita?"
-        ></Titulo>
+        />
         <div className="portifolio__projetos">
           <Projeto
             href="https://portalsei.saocristovao.se.gov.br"
@@ -65,6 +67,6 @@ export default function Portifolio() {
           <Botao href="/" text="Fale Comigo" />
         </Pilar>
       </div>
-    </div>
+    </section>
   );
 }

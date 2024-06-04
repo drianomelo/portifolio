@@ -1,0 +1,44 @@
+.processo {
+  width: 100%;
+  background-color: var(--clr-blue);
+}
+
+.processo__imagens {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+
+  position: relative;
+  top: -19rem;
+}
+
+.processo__pilar {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  right: 25rem;
+}
+
+.processo__pilar img:first-child {
+  width: 22.2rem;
+}
+
+.processo__pilar img:last-child {
+  height: 51%;
+
+  position: absolute;
+  left: 9.2rem;
+  bottom: 8.5rem;
+  z-index: 50;
+}
+
+.processo__container {
+  max-width: 1200px;
+  margin: -24rem auto 0;
+}
+
+.processo__etapas {
+  margin-bottom: 7.2rem;
+}
