@@ -1,6 +1,6 @@
 import "./Contato.css";
 import nuvem from "assets/images/background.png";
-import sol from "assets/images/sol-japones.png";
+import sol from "assets/images/sol-japones.jpg";
 import Botao from "components/Botao";
 
 export default function Contato() {
